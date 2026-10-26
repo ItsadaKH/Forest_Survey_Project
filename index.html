@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5a0e4ab3097060d1a7d05082a74f56b8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5a0e4ab3097060d1a7d05082a74f56b8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5a0e4ab3097060d1a7d05082a74f56b8 = L.map(
+                "map_5a0e4ab3097060d1a7d05082a74f56b8",
+                {
+                    center: [12.717547, 101.656578],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 17,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+
+            
+
+        
+    
+            var tile_layer_f468ea34ec71ffc4c1ff74617e39dff1 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f468ea34ec71ffc4c1ff74617e39dff1.addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var marker_75f518aab4e9fc0c4d449418b2e7d368 = L.marker(
+                [12.717547, 101.656578],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_f993369c06e7d7d98eb9375846cd993f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c313ae24a2fba8ec2392cbd4d84bd17 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_3c4a7998f2d729805526ecde6bd87fc0 = $(`<div id="html_3c4a7998f2d729805526ecde6bd87fc0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/002.jpg" alt="002.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">002.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4785.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717547<br>                 <b>Lon:</b> 101.656578             </div>             <a href="https://www.google.com/maps?q=12.717547222222223,101.65657777777778" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_4c313ae24a2fba8ec2392cbd4d84bd17.setContent(html_3c4a7998f2d729805526ecde6bd87fc0);
+            
+        
+
+        marker_75f518aab4e9fc0c4d449418b2e7d368.bindPopup(popup_4c313ae24a2fba8ec2392cbd4d84bd17)
+        ;
+
+        
+    
+    
+                marker_75f518aab4e9fc0c4d449418b2e7d368.setIcon(icon_f993369c06e7d7d98eb9375846cd993f);
+            
+    
+            var marker_632644e8197c7a6f77518d8cc2a0789e = L.marker(
+                [12.717544, 101.656569],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_5dbd6c91a9a75c9835829f9bf453f1e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea1bddbd56fc829a7c9345c73a21cc76 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_20c7932486867c2d8da859a12d30a384 = $(`<div id="html_20c7932486867c2d8da859a12d30a384" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/003.jpg" alt="003.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">003.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4786.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717544<br>                 <b>Lon:</b> 101.656569             </div>             <a href="https://www.google.com/maps?q=12.717544444444444,101.65656944444444" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_ea1bddbd56fc829a7c9345c73a21cc76.setContent(html_20c7932486867c2d8da859a12d30a384);
+            
+        
+
+        marker_632644e8197c7a6f77518d8cc2a0789e.bindPopup(popup_ea1bddbd56fc829a7c9345c73a21cc76)
+        ;
+
+        
+    
+    
+                marker_632644e8197c7a6f77518d8cc2a0789e.setIcon(icon_5dbd6c91a9a75c9835829f9bf453f1e2);
+            
+    
+            var marker_0eccfc6646a1a95301a2f02852783199 = L.marker(
+                [12.717569, 101.656586],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_7de0c53ecbd326f478fa3b7c7e64bacc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e060950f033bc60077c056fc6386f7fa = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_69d2abc18fe3bb52ff5b7f229cadc435 = $(`<div id="html_69d2abc18fe3bb52ff5b7f229cadc435" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/004.jpg" alt="004.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">004.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4787.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717569<br>                 <b>Lon:</b> 101.656586             </div>             <a href="https://www.google.com/maps?q=12.717569444444445,101.65658611111111" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_e060950f033bc60077c056fc6386f7fa.setContent(html_69d2abc18fe3bb52ff5b7f229cadc435);
+            
+        
+
+        marker_0eccfc6646a1a95301a2f02852783199.bindPopup(popup_e060950f033bc60077c056fc6386f7fa)
+        ;
+
+        
+    
+    
+                marker_0eccfc6646a1a95301a2f02852783199.setIcon(icon_7de0c53ecbd326f478fa3b7c7e64bacc);
+            
+    
+            var marker_fbfe1992bd1d855937f4185eb3c6c1ba = L.marker(
+                [12.717589, 101.656594],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_f5f450d0ee52d554a0ca5bb3f08737ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85dba8c1813fb187749c52da5d9faa18 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_6a9a276ae05ebb9ef43498c548f7263d = $(`<div id="html_6a9a276ae05ebb9ef43498c548f7263d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/005.jpg" alt="005.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">005.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4788.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717589<br>                 <b>Lon:</b> 101.656594             </div>             <a href="https://www.google.com/maps?q=12.717588888888889,101.65659444444445" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_85dba8c1813fb187749c52da5d9faa18.setContent(html_6a9a276ae05ebb9ef43498c548f7263d);
+            
+        
+
+        marker_fbfe1992bd1d855937f4185eb3c6c1ba.bindPopup(popup_85dba8c1813fb187749c52da5d9faa18)
+        ;
+
+        
+    
+    
+                marker_fbfe1992bd1d855937f4185eb3c6c1ba.setIcon(icon_f5f450d0ee52d554a0ca5bb3f08737ce);
+            
+    
+            var marker_a6e2854be371c82065f4c4e6e7b208b2 = L.marker(
+                [12.717756, 101.656311],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_26f9cbbdaca505a65391c9ec5e3d0fba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e92c0fbabb31e29c7f47860b8873e834 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_8a942122a018492e13f31e84ea587661 = $(`<div id="html_8a942122a018492e13f31e84ea587661" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/006.jpg" alt="006.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">006.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4789.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717756<br>                 <b>Lon:</b> 101.656311             </div>             <a href="https://www.google.com/maps?q=12.717755555555556,101.65631111111112" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_e92c0fbabb31e29c7f47860b8873e834.setContent(html_8a942122a018492e13f31e84ea587661);
+            
+        
+
+        marker_a6e2854be371c82065f4c4e6e7b208b2.bindPopup(popup_e92c0fbabb31e29c7f47860b8873e834)
+        ;
+
+        
+    
+    
+                marker_a6e2854be371c82065f4c4e6e7b208b2.setIcon(icon_26f9cbbdaca505a65391c9ec5e3d0fba);
+            
+    
+            var marker_d4116719bf3c04e9c7c7324f6fc4fe36 = L.marker(
+                [12.717594, 101.656525],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_b54a416f5dc77db80182fea417014934 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_444efbe7a363bfee1af8ba727f88824c = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_b5d4db9262856963d44c653b8d86a0fe = $(`<div id="html_b5d4db9262856963d44c653b8d86a0fe" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/007.jpg" alt="007.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">007.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4790.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717594<br>                 <b>Lon:</b> 101.656525             </div>             <a href="https://www.google.com/maps?q=12.717594444444444,101.656525" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_444efbe7a363bfee1af8ba727f88824c.setContent(html_b5d4db9262856963d44c653b8d86a0fe);
+            
+        
+
+        marker_d4116719bf3c04e9c7c7324f6fc4fe36.bindPopup(popup_444efbe7a363bfee1af8ba727f88824c)
+        ;
+
+        
+    
+    
+                marker_d4116719bf3c04e9c7c7324f6fc4fe36.setIcon(icon_b54a416f5dc77db80182fea417014934);
+            
+    
+            var marker_d3e4944634b08b515612875418597ed5 = L.marker(
+                [12.717497, 101.656381],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_c6d521fb3b0d1197c0155d2348c3db16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0effd49f5a1900aeda0cbc2513ca446d = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_f7cf38090bee357168ab5a33e201fbbf = $(`<div id="html_f7cf38090bee357168ab5a33e201fbbf" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/008.jpg" alt="008.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">008.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4791.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717497<br>                 <b>Lon:</b> 101.656381             </div>             <a href="https://www.google.com/maps?q=12.717497222222223,101.65638055555556" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_0effd49f5a1900aeda0cbc2513ca446d.setContent(html_f7cf38090bee357168ab5a33e201fbbf);
+            
+        
+
+        marker_d3e4944634b08b515612875418597ed5.bindPopup(popup_0effd49f5a1900aeda0cbc2513ca446d)
+        ;
+
+        
+    
+    
+                marker_d3e4944634b08b515612875418597ed5.setIcon(icon_c6d521fb3b0d1197c0155d2348c3db16);
+            
+    
+            var marker_176f0cbb0072a7bef6508d2fb4b50d3f = L.marker(
+                [12.717411, 101.656089],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_6532a54330c6547612fc56018ec4f26f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_10ab7ed1874d6e2841fabbf7513cafe9 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_e582842c578379a3a1154cb075bc6264 = $(`<div id="html_e582842c578379a3a1154cb075bc6264" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/009.jpg" alt="009.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">009.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4792.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717411<br>                 <b>Lon:</b> 101.656089             </div>             <a href="https://www.google.com/maps?q=12.717411111111112,101.65608888888889" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_10ab7ed1874d6e2841fabbf7513cafe9.setContent(html_e582842c578379a3a1154cb075bc6264);
+            
+        
+
+        marker_176f0cbb0072a7bef6508d2fb4b50d3f.bindPopup(popup_10ab7ed1874d6e2841fabbf7513cafe9)
+        ;
+
+        
+    
+    
+                marker_176f0cbb0072a7bef6508d2fb4b50d3f.setIcon(icon_6532a54330c6547612fc56018ec4f26f);
+            
+    
+            var marker_7abbe929d6706608dfbe6f0e8436547a = L.marker(
+                [12.717419, 101.656075],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_1d0ff4d5ef2245c80154826862aff74a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_226be3dcc8caa233098a394e1be7eb58 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_130601af72a962b563d8791e76aec8b0 = $(`<div id="html_130601af72a962b563d8791e76aec8b0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/010.jpg" alt="010.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">010.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4793.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717419<br>                 <b>Lon:</b> 101.656075             </div>             <a href="https://www.google.com/maps?q=12.717419444444445,101.656075" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_226be3dcc8caa233098a394e1be7eb58.setContent(html_130601af72a962b563d8791e76aec8b0);
+            
+        
+
+        marker_7abbe929d6706608dfbe6f0e8436547a.bindPopup(popup_226be3dcc8caa233098a394e1be7eb58)
+        ;
+
+        
+    
+    
+                marker_7abbe929d6706608dfbe6f0e8436547a.setIcon(icon_1d0ff4d5ef2245c80154826862aff74a);
+            
+    
+            var marker_2c15bd339d46cea02754b8498a687b63 = L.marker(
+                [12.717353, 101.655922],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_d34f8fc43b21cd4aa678ead6b1511759 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0ba9c895a87041816f1755493a3082b = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_6d0fc5360613b129e22fa57477111b0d = $(`<div id="html_6d0fc5360613b129e22fa57477111b0d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/011.jpg" alt="011.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">011.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4794.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717353<br>                 <b>Lon:</b> 101.655922             </div>             <a href="https://www.google.com/maps?q=12.717352777777778,101.65592222222223" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_f0ba9c895a87041816f1755493a3082b.setContent(html_6d0fc5360613b129e22fa57477111b0d);
+            
+        
+
+        marker_2c15bd339d46cea02754b8498a687b63.bindPopup(popup_f0ba9c895a87041816f1755493a3082b)
+        ;
+
+        
+    
+    
+                marker_2c15bd339d46cea02754b8498a687b63.setIcon(icon_d34f8fc43b21cd4aa678ead6b1511759);
+            
+    
+            var marker_b21b568609261072f268a4767a51ddac = L.marker(
+                [12.717319, 101.6559],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_4e1078cdfdfbaec1f87a1574e4d6b682 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76d1607ff26b5fca0aacf7673ef8a862 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_6c29f8dfbdd88db121c1949c20688f96 = $(`<div id="html_6c29f8dfbdd88db121c1949c20688f96" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/012.jpg" alt="012.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">012.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4795.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717319<br>                 <b>Lon:</b> 101.655900             </div>             <a href="https://www.google.com/maps?q=12.717319444444444,101.6559" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_76d1607ff26b5fca0aacf7673ef8a862.setContent(html_6c29f8dfbdd88db121c1949c20688f96);
+            
+        
+
+        marker_b21b568609261072f268a4767a51ddac.bindPopup(popup_76d1607ff26b5fca0aacf7673ef8a862)
+        ;
+
+        
+    
+    
+                marker_b21b568609261072f268a4767a51ddac.setIcon(icon_4e1078cdfdfbaec1f87a1574e4d6b682);
+            
+    
+            var marker_df9a75775e098ded6c9a25b51430e9cf = L.marker(
+                [12.717303, 101.655892],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_cebf998173e1cea957222132a92c5c8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd7e4b76af4afe64e68d4cb49a9db3ab = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_5e2660d573ae8c82769f6be783115caf = $(`<div id="html_5e2660d573ae8c82769f6be783115caf" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/013.jpg" alt="013.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">013.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4796.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717303<br>                 <b>Lon:</b> 101.655892             </div>             <a href="https://www.google.com/maps?q=12.717302777777778,101.65589166666668" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_fd7e4b76af4afe64e68d4cb49a9db3ab.setContent(html_5e2660d573ae8c82769f6be783115caf);
+            
+        
+
+        marker_df9a75775e098ded6c9a25b51430e9cf.bindPopup(popup_fd7e4b76af4afe64e68d4cb49a9db3ab)
+        ;
+
+        
+    
+    
+                marker_df9a75775e098ded6c9a25b51430e9cf.setIcon(icon_cebf998173e1cea957222132a92c5c8a);
+            
+    
+            var marker_2b52abb41e9dc3dff8dae47779248db3 = L.marker(
+                [12.717228, 101.655839],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_293bd29c9108218b45482c949955e398 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef608e9fe868ba37e3b2fb8e6cd7bc38 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_7584476f0ca313205045d07ef1760dac = $(`<div id="html_7584476f0ca313205045d07ef1760dac" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/014.jpg" alt="014.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">014.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4797.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717228<br>                 <b>Lon:</b> 101.655839             </div>             <a href="https://www.google.com/maps?q=12.717227777777778,101.6558388888889" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_ef608e9fe868ba37e3b2fb8e6cd7bc38.setContent(html_7584476f0ca313205045d07ef1760dac);
+            
+        
+
+        marker_2b52abb41e9dc3dff8dae47779248db3.bindPopup(popup_ef608e9fe868ba37e3b2fb8e6cd7bc38)
+        ;
+
+        
+    
+    
+                marker_2b52abb41e9dc3dff8dae47779248db3.setIcon(icon_293bd29c9108218b45482c949955e398);
+            
+    
+            var marker_2c39dab54e59b48bbc66aefa58896e60 = L.marker(
+                [12.717519, 101.655586],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_16f4be38556efb182e80ac93b9db63b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbc395a3febfa0ba4f2861be4e812be2 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_e349835ff7c46b4e55fe3ccd46cc6151 = $(`<div id="html_e349835ff7c46b4e55fe3ccd46cc6151" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/015.jpg" alt="015.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">015.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4798.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717519<br>                 <b>Lon:</b> 101.655586             </div>             <a href="https://www.google.com/maps?q=12.717519444444445,101.65558611111112" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_fbc395a3febfa0ba4f2861be4e812be2.setContent(html_e349835ff7c46b4e55fe3ccd46cc6151);
+            
+        
+
+        marker_2c39dab54e59b48bbc66aefa58896e60.bindPopup(popup_fbc395a3febfa0ba4f2861be4e812be2)
+        ;
+
+        
+    
+    
+                marker_2c39dab54e59b48bbc66aefa58896e60.setIcon(icon_16f4be38556efb182e80ac93b9db63b2);
+            
+    
+            var marker_0dcf23b8a5402997f4aa1ec0154cb3e5 = L.marker(
+                [12.717183, 101.655608],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_9f9f414281fce224b88b196ec24b308b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3624fc0ae078db24f7ab6c2ea4b810d6 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_0cd22c9e9fd68204095e8c4e3a25c9d3 = $(`<div id="html_0cd22c9e9fd68204095e8c4e3a25c9d3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/016.jpg" alt="016.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">016.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4799.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717183<br>                 <b>Lon:</b> 101.655608             </div>             <a href="https://www.google.com/maps?q=12.717183333333333,101.65560833333333" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_3624fc0ae078db24f7ab6c2ea4b810d6.setContent(html_0cd22c9e9fd68204095e8c4e3a25c9d3);
+            
+        
+
+        marker_0dcf23b8a5402997f4aa1ec0154cb3e5.bindPopup(popup_3624fc0ae078db24f7ab6c2ea4b810d6)
+        ;
+
+        
+    
+    
+                marker_0dcf23b8a5402997f4aa1ec0154cb3e5.setIcon(icon_9f9f414281fce224b88b196ec24b308b);
+            
+    
+            var marker_550c7157b2eac199ca944df738b6cad8 = L.marker(
+                [12.717169, 101.655594],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_b870d502a2a73ff08d8920a3440145cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77d1a909e610d0763c8cab6ea849471b = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_a018015d6806f083917ad7e9c3ce371d = $(`<div id="html_a018015d6806f083917ad7e9c3ce371d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/017.jpg" alt="017.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">017.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4800.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717169<br>                 <b>Lon:</b> 101.655594             </div>             <a href="https://www.google.com/maps?q=12.717169444444444,101.65559444444445" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_77d1a909e610d0763c8cab6ea849471b.setContent(html_a018015d6806f083917ad7e9c3ce371d);
+            
+        
+
+        marker_550c7157b2eac199ca944df738b6cad8.bindPopup(popup_77d1a909e610d0763c8cab6ea849471b)
+        ;
+
+        
+    
+    
+                marker_550c7157b2eac199ca944df738b6cad8.setIcon(icon_b870d502a2a73ff08d8920a3440145cd);
+            
+    
+            var marker_531132a0e78c73979b357044f9c3b8dc = L.marker(
+                [12.716972, 101.655564],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_3c3f0a29164d04854bf6b82130cacbe5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed138858e6d38ae9391feaa095df98b3 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_bde0b24db7c620416a082c42dcdfb409 = $(`<div id="html_bde0b24db7c620416a082c42dcdfb409" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/018.jpg" alt="018.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">018.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4801.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716972<br>                 <b>Lon:</b> 101.655564             </div>             <a href="https://www.google.com/maps?q=12.716972222222223,101.65556388888889" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_ed138858e6d38ae9391feaa095df98b3.setContent(html_bde0b24db7c620416a082c42dcdfb409);
+            
+        
+
+        marker_531132a0e78c73979b357044f9c3b8dc.bindPopup(popup_ed138858e6d38ae9391feaa095df98b3)
+        ;
+
+        
+    
+    
+                marker_531132a0e78c73979b357044f9c3b8dc.setIcon(icon_3c3f0a29164d04854bf6b82130cacbe5);
+            
+    
+            var marker_5bb8b87a273df1af1ec3b7cf48c423d3 = L.marker(
+                [12.717072, 101.655403],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_2922adce12435187790a9287ac9cf525 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94f65e8caebcf342bfa318e40063edd0 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_bded8167b392e09b747b1fb700ba45cf = $(`<div id="html_bded8167b392e09b747b1fb700ba45cf" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/019.jpg" alt="019.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">019.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4802.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.717072<br>                 <b>Lon:</b> 101.655403             </div>             <a href="https://www.google.com/maps?q=12.717072222222223,101.65540277777778" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_94f65e8caebcf342bfa318e40063edd0.setContent(html_bded8167b392e09b747b1fb700ba45cf);
+            
+        
+
+        marker_5bb8b87a273df1af1ec3b7cf48c423d3.bindPopup(popup_94f65e8caebcf342bfa318e40063edd0)
+        ;
+
+        
+    
+    
+                marker_5bb8b87a273df1af1ec3b7cf48c423d3.setIcon(icon_2922adce12435187790a9287ac9cf525);
+            
+    
+            var marker_bf09a69b2528663b882c0a9aaf82611a = L.marker(
+                [12.716858, 101.655564],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_105648c1e8158eb2d782c10382dc344b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3369067cf6da23675be1733d13c7d99f = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_17992dde8073bc67d5323e4891e9e5b9 = $(`<div id="html_17992dde8073bc67d5323e4891e9e5b9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/020.jpg" alt="020.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">020.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4803.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716858<br>                 <b>Lon:</b> 101.655564             </div>             <a href="https://www.google.com/maps?q=12.716858333333333,101.65556388888889" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_3369067cf6da23675be1733d13c7d99f.setContent(html_17992dde8073bc67d5323e4891e9e5b9);
+            
+        
+
+        marker_bf09a69b2528663b882c0a9aaf82611a.bindPopup(popup_3369067cf6da23675be1733d13c7d99f)
+        ;
+
+        
+    
+    
+                marker_bf09a69b2528663b882c0a9aaf82611a.setIcon(icon_105648c1e8158eb2d782c10382dc344b);
+            
+    
+            var marker_407c71e49c7d49f2537875451bc1b353 = L.marker(
+                [12.716764, 101.655603],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_5afa8aed730aaacd29e7d0980919197b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50b629ec188f7e847211091db9bba6b1 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_43a7ed4daa38df8116df8d570174868a = $(`<div id="html_43a7ed4daa38df8116df8d570174868a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/021.jpg" alt="021.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">021.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4804.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716764<br>                 <b>Lon:</b> 101.655603             </div>             <a href="https://www.google.com/maps?q=12.71676388888889,101.65560277777779" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_50b629ec188f7e847211091db9bba6b1.setContent(html_43a7ed4daa38df8116df8d570174868a);
+            
+        
+
+        marker_407c71e49c7d49f2537875451bc1b353.bindPopup(popup_50b629ec188f7e847211091db9bba6b1)
+        ;
+
+        
+    
+    
+                marker_407c71e49c7d49f2537875451bc1b353.setIcon(icon_5afa8aed730aaacd29e7d0980919197b);
+            
+    
+            var marker_faa270236c244693ec3b72f9a5ee25ed = L.marker(
+                [12.716778, 101.655517],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_6b2af55acebb670d650af2fcdd28ccf7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d926270a5e2e314134a45008433d7e4 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_21c5bedad535443fa05b8ce693a00f37 = $(`<div id="html_21c5bedad535443fa05b8ce693a00f37" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/022.jpg" alt="022.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">022.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4805.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716778<br>                 <b>Lon:</b> 101.655517             </div>             <a href="https://www.google.com/maps?q=12.716777777777779,101.65551666666667" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_9d926270a5e2e314134a45008433d7e4.setContent(html_21c5bedad535443fa05b8ce693a00f37);
+            
+        
+
+        marker_faa270236c244693ec3b72f9a5ee25ed.bindPopup(popup_9d926270a5e2e314134a45008433d7e4)
+        ;
+
+        
+    
+    
+                marker_faa270236c244693ec3b72f9a5ee25ed.setIcon(icon_6b2af55acebb670d650af2fcdd28ccf7);
+            
+    
+            var marker_284a80c398467d5d9a778679d06aa25e = L.marker(
+                [12.716608, 101.6557],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_b719b99d0daa9c6d52a9ed3bb4ac36b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a760ab50de33e8b69a883e17ba39c63 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_7beb340ddd198748712d634797410786 = $(`<div id="html_7beb340ddd198748712d634797410786" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/023.jpg" alt="023.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">023.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4806.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716608<br>                 <b>Lon:</b> 101.655700             </div>             <a href="https://www.google.com/maps?q=12.716608333333333,101.65570000000001" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_4a760ab50de33e8b69a883e17ba39c63.setContent(html_7beb340ddd198748712d634797410786);
+            
+        
+
+        marker_284a80c398467d5d9a778679d06aa25e.bindPopup(popup_4a760ab50de33e8b69a883e17ba39c63)
+        ;
+
+        
+    
+    
+                marker_284a80c398467d5d9a778679d06aa25e.setIcon(icon_b719b99d0daa9c6d52a9ed3bb4ac36b8);
+            
+    
+            var marker_751b2e54e3d8df200a37a0647042047e = L.marker(
+                [12.716575, 101.655731],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_145645f5b1454b02b811459c2b87f508 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b88c2a635cf3edf5adb16b8be0252c75 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_e6167f0d1c2c16ff0fe2247ceaffe54a = $(`<div id="html_e6167f0d1c2c16ff0fe2247ceaffe54a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/024.jpg" alt="024.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">024.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4807.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716575<br>                 <b>Lon:</b> 101.655731             </div>             <a href="https://www.google.com/maps?q=12.716574999999999,101.65573055555556" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_b88c2a635cf3edf5adb16b8be0252c75.setContent(html_e6167f0d1c2c16ff0fe2247ceaffe54a);
+            
+        
+
+        marker_751b2e54e3d8df200a37a0647042047e.bindPopup(popup_b88c2a635cf3edf5adb16b8be0252c75)
+        ;
+
+        
+    
+    
+                marker_751b2e54e3d8df200a37a0647042047e.setIcon(icon_145645f5b1454b02b811459c2b87f508);
+            
+    
+            var marker_6c7f1fbb876646a54004a14fe9b44ead = L.marker(
+                [12.716506, 101.655753],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_6ce8619615df81334f456624ea4c86f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d344ab333f8c77c2b2ac966669e816f = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_291d31da643c76d0756d31ba67d63558 = $(`<div id="html_291d31da643c76d0756d31ba67d63558" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/025.jpg" alt="025.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">025.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4808.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716506<br>                 <b>Lon:</b> 101.655753             </div>             <a href="https://www.google.com/maps?q=12.716505555555555,101.65575277777778" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_6d344ab333f8c77c2b2ac966669e816f.setContent(html_291d31da643c76d0756d31ba67d63558);
+            
+        
+
+        marker_6c7f1fbb876646a54004a14fe9b44ead.bindPopup(popup_6d344ab333f8c77c2b2ac966669e816f)
+        ;
+
+        
+    
+    
+                marker_6c7f1fbb876646a54004a14fe9b44ead.setIcon(icon_6ce8619615df81334f456624ea4c86f6);
+            
+    
+            var marker_6f17810cd6dc4caef979857aa9fcee63 = L.marker(
+                [12.716433, 101.655739],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_3ee197749a9c68eb58c921a23e732fbd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8791ab0e7b79a1d731acc1a7f97a98a6 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_68a6471e3ae82e0d9fce060be1a245ac = $(`<div id="html_68a6471e3ae82e0d9fce060be1a245ac" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/026.jpg" alt="026.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">026.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4809.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716433<br>                 <b>Lon:</b> 101.655739             </div>             <a href="https://www.google.com/maps?q=12.716433333333333,101.65573888888889" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_8791ab0e7b79a1d731acc1a7f97a98a6.setContent(html_68a6471e3ae82e0d9fce060be1a245ac);
+            
+        
+
+        marker_6f17810cd6dc4caef979857aa9fcee63.bindPopup(popup_8791ab0e7b79a1d731acc1a7f97a98a6)
+        ;
+
+        
+    
+    
+                marker_6f17810cd6dc4caef979857aa9fcee63.setIcon(icon_3ee197749a9c68eb58c921a23e732fbd);
+            
+    
+            var marker_3a87171e9a06fbb9118f84639e99d70b = L.marker(
+                [12.716428, 101.655747],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_0b7cd2ef565dedc1e9e82ef051f06ae2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76d283911715b96ea008492aafbf23b5 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_71eb357104c2954ccf929bc5b6d72741 = $(`<div id="html_71eb357104c2954ccf929bc5b6d72741" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/027.jpg" alt="027.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">027.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4810.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716428<br>                 <b>Lon:</b> 101.655747             </div>             <a href="https://www.google.com/maps?q=12.716427777777778,101.65574722222223" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_76d283911715b96ea008492aafbf23b5.setContent(html_71eb357104c2954ccf929bc5b6d72741);
+            
+        
+
+        marker_3a87171e9a06fbb9118f84639e99d70b.bindPopup(popup_76d283911715b96ea008492aafbf23b5)
+        ;
+
+        
+    
+    
+                marker_3a87171e9a06fbb9118f84639e99d70b.setIcon(icon_0b7cd2ef565dedc1e9e82ef051f06ae2);
+            
+    
+            var marker_7b01a1d6ae055752b0c0890337a25a1b = L.marker(
+                [12.7167, 101.655481],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_1d25ca9e9aef89dbc777e51bc99aae95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_255ed9dd1b85dbeed274d7d76e1d7dda = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_4e3af4d7372a6cbd0f12f9df2a4ee997 = $(`<div id="html_4e3af4d7372a6cbd0f12f9df2a4ee997" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/028.jpg" alt="028.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">028.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4811.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716700<br>                 <b>Lon:</b> 101.655481             </div>             <a href="https://www.google.com/maps?q=12.7167,101.65548055555556" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_255ed9dd1b85dbeed274d7d76e1d7dda.setContent(html_4e3af4d7372a6cbd0f12f9df2a4ee997);
+            
+        
+
+        marker_7b01a1d6ae055752b0c0890337a25a1b.bindPopup(popup_255ed9dd1b85dbeed274d7d76e1d7dda)
+        ;
+
+        
+    
+    
+                marker_7b01a1d6ae055752b0c0890337a25a1b.setIcon(icon_1d25ca9e9aef89dbc777e51bc99aae95);
+            
+    
+            var marker_376656e289137dab5ef0db208a192e0b = L.marker(
+                [12.716364, 101.655633],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_fe534b718d9abc3c17b93d4665053a69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a6bbf0531cad7e59b871434d458b23d = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_90a2bae28071c1364d746dd9b6790c8c = $(`<div id="html_90a2bae28071c1364d746dd9b6790c8c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/029.jpg" alt="029.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">029.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4812.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716364<br>                 <b>Lon:</b> 101.655633             </div>             <a href="https://www.google.com/maps?q=12.716363888888889,101.65563333333334" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_9a6bbf0531cad7e59b871434d458b23d.setContent(html_90a2bae28071c1364d746dd9b6790c8c);
+            
+        
+
+        marker_376656e289137dab5ef0db208a192e0b.bindPopup(popup_9a6bbf0531cad7e59b871434d458b23d)
+        ;
+
+        
+    
+    
+                marker_376656e289137dab5ef0db208a192e0b.setIcon(icon_fe534b718d9abc3c17b93d4665053a69);
+            
+    
+            var marker_52a1556715ad7a7a94aea329e0d876c1 = L.marker(
+                [12.716369, 101.655608],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_e8f1caa0f41750851bdd8a54eeeb316d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3eef57cb475d9b7097735c045d523cc = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_519fd98c989999cc0fe51c7e6b58269a = $(`<div id="html_519fd98c989999cc0fe51c7e6b58269a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/030.jpg" alt="030.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">030.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4813.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716369<br>                 <b>Lon:</b> 101.655608             </div>             <a href="https://www.google.com/maps?q=12.716369444444444,101.65560833333333" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_b3eef57cb475d9b7097735c045d523cc.setContent(html_519fd98c989999cc0fe51c7e6b58269a);
+            
+        
+
+        marker_52a1556715ad7a7a94aea329e0d876c1.bindPopup(popup_b3eef57cb475d9b7097735c045d523cc)
+        ;
+
+        
+    
+    
+                marker_52a1556715ad7a7a94aea329e0d876c1.setIcon(icon_e8f1caa0f41750851bdd8a54eeeb316d);
+            
+    
+            var marker_6bebdac9574d0b99b09aec2939ef6d00 = L.marker(
+                [12.716375, 101.655839],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_0f556741fad5e5d0a019803b24e97769 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_837f0c76e2194c34d3226b9dddc296d5 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_f3a16b663a6ca7466021b49108cfa77d = $(`<div id="html_f3a16b663a6ca7466021b49108cfa77d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/031.jpg" alt="031.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">031.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4815.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716375<br>                 <b>Lon:</b> 101.655839             </div>             <a href="https://www.google.com/maps?q=12.716375,101.6558388888889" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_837f0c76e2194c34d3226b9dddc296d5.setContent(html_f3a16b663a6ca7466021b49108cfa77d);
+            
+        
+
+        marker_6bebdac9574d0b99b09aec2939ef6d00.bindPopup(popup_837f0c76e2194c34d3226b9dddc296d5)
+        ;
+
+        
+    
+    
+                marker_6bebdac9574d0b99b09aec2939ef6d00.setIcon(icon_0f556741fad5e5d0a019803b24e97769);
+            
+    
+            var marker_bd4b0456f138f777f87571fb32b13a56 = L.marker(
+                [12.716333, 101.655844],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_941fef2c25ccab7a79d530460ff712af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0eade5b4441c29a4076462c0403f443 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_0705af209245319a0f33f49a6664508d = $(`<div id="html_0705af209245319a0f33f49a6664508d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/032.jpg" alt="032.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">032.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4816.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716333<br>                 <b>Lon:</b> 101.655844             </div>             <a href="https://www.google.com/maps?q=12.716333333333333,101.65584444444445" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_d0eade5b4441c29a4076462c0403f443.setContent(html_0705af209245319a0f33f49a6664508d);
+            
+        
+
+        marker_bd4b0456f138f777f87571fb32b13a56.bindPopup(popup_d0eade5b4441c29a4076462c0403f443)
+        ;
+
+        
+    
+    
+                marker_bd4b0456f138f777f87571fb32b13a56.setIcon(icon_941fef2c25ccab7a79d530460ff712af);
+            
+    
+            var marker_bfaabff745d3fdcd28ba9daf8260cf57 = L.marker(
+                [12.716281, 101.655961],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_d56d6ffe931058c900beeafd1abcf9e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18f70257adf7a13c55fbb36665959068 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_9a9460eaf48609b41b43047cab491bcd = $(`<div id="html_9a9460eaf48609b41b43047cab491bcd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/033.jpg" alt="033.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">033.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4817.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716281<br>                 <b>Lon:</b> 101.655961             </div>             <a href="https://www.google.com/maps?q=12.716280555555555,101.65596111111111" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_18f70257adf7a13c55fbb36665959068.setContent(html_9a9460eaf48609b41b43047cab491bcd);
+            
+        
+
+        marker_bfaabff745d3fdcd28ba9daf8260cf57.bindPopup(popup_18f70257adf7a13c55fbb36665959068)
+        ;
+
+        
+    
+    
+                marker_bfaabff745d3fdcd28ba9daf8260cf57.setIcon(icon_d56d6ffe931058c900beeafd1abcf9e3);
+            
+    
+            var marker_16130d03d243b3505dffa08bf2f1226c = L.marker(
+                [12.716225, 101.655997],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_4ab715b706250bb54a17b3a945686c2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_996414c2242a49c4b31f954a7f1dc34c = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_66ad1ac7777e2744aabbca5a3caa0a62 = $(`<div id="html_66ad1ac7777e2744aabbca5a3caa0a62" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/034.jpg" alt="034.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">034.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4818.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716225<br>                 <b>Lon:</b> 101.655997             </div>             <a href="https://www.google.com/maps?q=12.716225,101.65599722222223" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_996414c2242a49c4b31f954a7f1dc34c.setContent(html_66ad1ac7777e2744aabbca5a3caa0a62);
+            
+        
+
+        marker_16130d03d243b3505dffa08bf2f1226c.bindPopup(popup_996414c2242a49c4b31f954a7f1dc34c)
+        ;
+
+        
+    
+    
+                marker_16130d03d243b3505dffa08bf2f1226c.setIcon(icon_4ab715b706250bb54a17b3a945686c2b);
+            
+    
+            var marker_44a0cae022d840935e8b23bbb095594f = L.marker(
+                [12.716169, 101.656272],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_6ff72b273b3205627ae86e1c6de4a435 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_503e7de583be4e8464ff3028c6161f60 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_0720d3ba4b8d8fb088354ef80b05add9 = $(`<div id="html_0720d3ba4b8d8fb088354ef80b05add9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/035.jpg" alt="035.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">035.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4819.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716169<br>                 <b>Lon:</b> 101.656272             </div>             <a href="https://www.google.com/maps?q=12.716169444444443,101.65627222222223" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_503e7de583be4e8464ff3028c6161f60.setContent(html_0720d3ba4b8d8fb088354ef80b05add9);
+            
+        
+
+        marker_44a0cae022d840935e8b23bbb095594f.bindPopup(popup_503e7de583be4e8464ff3028c6161f60)
+        ;
+
+        
+    
+    
+                marker_44a0cae022d840935e8b23bbb095594f.setIcon(icon_6ff72b273b3205627ae86e1c6de4a435);
+            
+    
+            var marker_7406765df54b18e3c8a44315dc839a4a = L.marker(
+                [12.716169, 101.656272],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_abbdd6324cc2eb2e691d73340cff43ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1037588362da3f3a9e0365d1a0a3390a = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_98ad2cf3b79adca437f90333a36d3ef8 = $(`<div id="html_98ad2cf3b79adca437f90333a36d3ef8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/036.jpg" alt="036.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">036.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4820.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716169<br>                 <b>Lon:</b> 101.656272             </div>             <a href="https://www.google.com/maps?q=12.716169444444443,101.65627222222223" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_1037588362da3f3a9e0365d1a0a3390a.setContent(html_98ad2cf3b79adca437f90333a36d3ef8);
+            
+        
+
+        marker_7406765df54b18e3c8a44315dc839a4a.bindPopup(popup_1037588362da3f3a9e0365d1a0a3390a)
+        ;
+
+        
+    
+    
+                marker_7406765df54b18e3c8a44315dc839a4a.setIcon(icon_abbdd6324cc2eb2e691d73340cff43ad);
+            
+    
+            var marker_044e6cde73a5b8f069b19fa7b35fb511 = L.marker(
+                [12.716169, 101.656272],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_a7873a84de3b5a5dd5247137180af0ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc544932adf25764f17d93fd6d28ef85 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_3f00767a982a674a1f38abdf537b9b74 = $(`<div id="html_3f00767a982a674a1f38abdf537b9b74" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/037.jpg" alt="037.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">037.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4821.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716169<br>                 <b>Lon:</b> 101.656272             </div>             <a href="https://www.google.com/maps?q=12.716169444444443,101.65627222222223" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_bc544932adf25764f17d93fd6d28ef85.setContent(html_3f00767a982a674a1f38abdf537b9b74);
+            
+        
+
+        marker_044e6cde73a5b8f069b19fa7b35fb511.bindPopup(popup_bc544932adf25764f17d93fd6d28ef85)
+        ;
+
+        
+    
+    
+                marker_044e6cde73a5b8f069b19fa7b35fb511.setIcon(icon_a7873a84de3b5a5dd5247137180af0ad);
+            
+    
+            var marker_abce1574b37eaf192ba2f90457744a83 = L.marker(
+                [12.716139, 101.656319],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_9da7e5866b3802a560be9b2bfcf54bbf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fbcf3afc72e8f20b40e78c90773213f = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_089ee71098f2b05c797d85dfe500f1c7 = $(`<div id="html_089ee71098f2b05c797d85dfe500f1c7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/038.jpg" alt="038.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">038.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4822.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716139<br>                 <b>Lon:</b> 101.656319             </div>             <a href="https://www.google.com/maps?q=12.716138888888889,101.65631944444445" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_2fbcf3afc72e8f20b40e78c90773213f.setContent(html_089ee71098f2b05c797d85dfe500f1c7);
+            
+        
+
+        marker_abce1574b37eaf192ba2f90457744a83.bindPopup(popup_2fbcf3afc72e8f20b40e78c90773213f)
+        ;
+
+        
+    
+    
+                marker_abce1574b37eaf192ba2f90457744a83.setIcon(icon_9da7e5866b3802a560be9b2bfcf54bbf);
+            
+    
+            var marker_ae99a5b6c35be5fba21835e373cf118b = L.marker(
+                [12.716139, 101.656319],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_5512046730e7f8ec5e60d29d5bd7dabc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_745219856a19f0c11c71b3edfaa7f63b = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_edafa9c2c1b1427448c10c2073fa3166 = $(`<div id="html_edafa9c2c1b1427448c10c2073fa3166" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/039.jpg" alt="039.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">039.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4823.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716139<br>                 <b>Lon:</b> 101.656319             </div>             <a href="https://www.google.com/maps?q=12.716138888888889,101.65631944444445" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_745219856a19f0c11c71b3edfaa7f63b.setContent(html_edafa9c2c1b1427448c10c2073fa3166);
+            
+        
+
+        marker_ae99a5b6c35be5fba21835e373cf118b.bindPopup(popup_745219856a19f0c11c71b3edfaa7f63b)
+        ;
+
+        
+    
+    
+                marker_ae99a5b6c35be5fba21835e373cf118b.setIcon(icon_5512046730e7f8ec5e60d29d5bd7dabc);
+            
+    
+            var marker_69f96100dda9d5f008506d006774a456 = L.marker(
+                [12.716139, 101.656319],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_f762b8422d89ff0e9c6f4db41b365256 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb191b34f57d1ecb789c001522cfa444 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_15dbe5d3707b70a02acfc5a9a8fb03f2 = $(`<div id="html_15dbe5d3707b70a02acfc5a9a8fb03f2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/040.jpg" alt="040.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">040.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4824.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716139<br>                 <b>Lon:</b> 101.656319             </div>             <a href="https://www.google.com/maps?q=12.716138888888889,101.65631944444445" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_eb191b34f57d1ecb789c001522cfa444.setContent(html_15dbe5d3707b70a02acfc5a9a8fb03f2);
+            
+        
+
+        marker_69f96100dda9d5f008506d006774a456.bindPopup(popup_eb191b34f57d1ecb789c001522cfa444)
+        ;
+
+        
+    
+    
+                marker_69f96100dda9d5f008506d006774a456.setIcon(icon_f762b8422d89ff0e9c6f4db41b365256);
+            
+    
+            var marker_8f8cf6e66b6efeb82eee06fb3f95f5dc = L.marker(
+                [12.716167, 101.656364],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_a186392ec4fc4e6ff294c914abeeff9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_853b5d99076b70586d2853776d813e7c = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_e61e8a971c6e2e3f92deeac027dfed69 = $(`<div id="html_e61e8a971c6e2e3f92deeac027dfed69" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/041.jpg" alt="041.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">041.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4825.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716167<br>                 <b>Lon:</b> 101.656364             </div>             <a href="https://www.google.com/maps?q=12.716166666666666,101.65636388888889" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_853b5d99076b70586d2853776d813e7c.setContent(html_e61e8a971c6e2e3f92deeac027dfed69);
+            
+        
+
+        marker_8f8cf6e66b6efeb82eee06fb3f95f5dc.bindPopup(popup_853b5d99076b70586d2853776d813e7c)
+        ;
+
+        
+    
+    
+                marker_8f8cf6e66b6efeb82eee06fb3f95f5dc.setIcon(icon_a186392ec4fc4e6ff294c914abeeff9b);
+            
+    
+            var marker_69246597899034a695f91b73bb781eee = L.marker(
+                [12.716164, 101.656464],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_39e04508e4dd2b35efb9f9331e187842 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c257b3875405e4a3ff99e3e17b6b9525 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_63091d246de29684a440f2e4c3d01ddb = $(`<div id="html_63091d246de29684a440f2e4c3d01ddb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/042.jpg" alt="042.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">042.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4829.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716164<br>                 <b>Lon:</b> 101.656464             </div>             <a href="https://www.google.com/maps?q=12.716163888888888,101.6564638888889" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_c257b3875405e4a3ff99e3e17b6b9525.setContent(html_63091d246de29684a440f2e4c3d01ddb);
+            
+        
+
+        marker_69246597899034a695f91b73bb781eee.bindPopup(popup_c257b3875405e4a3ff99e3e17b6b9525)
+        ;
+
+        
+    
+    
+                marker_69246597899034a695f91b73bb781eee.setIcon(icon_39e04508e4dd2b35efb9f9331e187842);
+            
+    
+            var marker_f78339c1820b6a56801c1dbf9b2097cc = L.marker(
+                [12.716119, 101.656717],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_c78dda8e1f58c4967b6e2f0989c510bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45804a33efd6c0d359aad68746670b00 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_8312e6c19946a9c913a14175dbba4cb2 = $(`<div id="html_8312e6c19946a9c913a14175dbba4cb2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/043.jpg" alt="043.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">043.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4830.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716119<br>                 <b>Lon:</b> 101.656717             </div>             <a href="https://www.google.com/maps?q=12.716119444444443,101.65671666666667" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_45804a33efd6c0d359aad68746670b00.setContent(html_8312e6c19946a9c913a14175dbba4cb2);
+            
+        
+
+        marker_f78339c1820b6a56801c1dbf9b2097cc.bindPopup(popup_45804a33efd6c0d359aad68746670b00)
+        ;
+
+        
+    
+    
+                marker_f78339c1820b6a56801c1dbf9b2097cc.setIcon(icon_c78dda8e1f58c4967b6e2f0989c510bb);
+            
+    
+            var marker_70ab6ce15bc02260e51d50bda2b8a7c1 = L.marker(
+                [12.716136, 101.656836],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_bde68dd0cd6ba85d884a7dbd8a3783a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a481797f6dcc40314ae6c917748fe208 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_c1f84a478f8aacac10bdc17b578c8de4 = $(`<div id="html_c1f84a478f8aacac10bdc17b578c8de4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/044.jpg" alt="044.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">044.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4832.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716136<br>                 <b>Lon:</b> 101.656836             </div>             <a href="https://www.google.com/maps?q=12.71613611111111,101.65683611111112" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_a481797f6dcc40314ae6c917748fe208.setContent(html_c1f84a478f8aacac10bdc17b578c8de4);
+            
+        
+
+        marker_70ab6ce15bc02260e51d50bda2b8a7c1.bindPopup(popup_a481797f6dcc40314ae6c917748fe208)
+        ;
+
+        
+    
+    
+                marker_70ab6ce15bc02260e51d50bda2b8a7c1.setIcon(icon_bde68dd0cd6ba85d884a7dbd8a3783a4);
+            
+    
+            var marker_fff0c387d6e74db3eaed4f53c020e413 = L.marker(
+                [12.716158, 101.656892],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_58a69f21eb5954766826b845b62d928e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0a19ad328246f946b0d05b00d00677c = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_fe2bdc5c254f16ac145b43449f7e5f7c = $(`<div id="html_fe2bdc5c254f16ac145b43449f7e5f7c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/045.jpg" alt="045.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">045.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4833.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716158<br>                 <b>Lon:</b> 101.656892             </div>             <a href="https://www.google.com/maps?q=12.716158333333333,101.65689166666667" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_f0a19ad328246f946b0d05b00d00677c.setContent(html_fe2bdc5c254f16ac145b43449f7e5f7c);
+            
+        
+
+        marker_fff0c387d6e74db3eaed4f53c020e413.bindPopup(popup_f0a19ad328246f946b0d05b00d00677c)
+        ;
+
+        
+    
+    
+                marker_fff0c387d6e74db3eaed4f53c020e413.setIcon(icon_58a69f21eb5954766826b845b62d928e);
+            
+    
+            var marker_421f1a0fdd9da38093e12395e89027e5 = L.marker(
+                [12.716178, 101.656958],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_90f809bf1df7b36d4d8c10c25c4b9b80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e12d6aef5b538fa8f08a5a43b298b52f = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_29b2974958733d1c92000636696c324d = $(`<div id="html_29b2974958733d1c92000636696c324d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/047.jpg" alt="047.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">047.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4835.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716178<br>                 <b>Lon:</b> 101.656958             </div>             <a href="https://www.google.com/maps?q=12.716177777777776,101.65695833333334" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_e12d6aef5b538fa8f08a5a43b298b52f.setContent(html_29b2974958733d1c92000636696c324d);
+            
+        
+
+        marker_421f1a0fdd9da38093e12395e89027e5.bindPopup(popup_e12d6aef5b538fa8f08a5a43b298b52f)
+        ;
+
+        
+    
+    
+                marker_421f1a0fdd9da38093e12395e89027e5.setIcon(icon_90f809bf1df7b36d4d8c10c25c4b9b80);
+            
+    
+            var marker_a7661996cc6f76f31c7878828cfc65c5 = L.marker(
+                [12.716192, 101.656989],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_83a6e737552c4777a739fccaa894dab0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_737d5f8b285c92d69e1092e71f1f9e7a = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_20c8b6c77a98b919aec02b1844cb877a = $(`<div id="html_20c8b6c77a98b919aec02b1844cb877a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/048.jpg" alt="048.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">048.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4836.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716192<br>                 <b>Lon:</b> 101.656989             </div>             <a href="https://www.google.com/maps?q=12.716191666666665,101.65698888888889" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_737d5f8b285c92d69e1092e71f1f9e7a.setContent(html_20c8b6c77a98b919aec02b1844cb877a);
+            
+        
+
+        marker_a7661996cc6f76f31c7878828cfc65c5.bindPopup(popup_737d5f8b285c92d69e1092e71f1f9e7a)
+        ;
+
+        
+    
+    
+                marker_a7661996cc6f76f31c7878828cfc65c5.setIcon(icon_83a6e737552c4777a739fccaa894dab0);
+            
+    
+            var marker_d90b94d8fe5c2c3ea2c7f744b7333324 = L.marker(
+                [12.716211, 101.657106],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_d027058c5ce2dfe3d6a7c1f6796cb50e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9cc1d65dcec75254926c532bcf02249 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_d69a21ae259b485d922142ec0bd62b1d = $(`<div id="html_d69a21ae259b485d922142ec0bd62b1d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/050.jpg" alt="050.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">050.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4838.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716211<br>                 <b>Lon:</b> 101.657106             </div>             <a href="https://www.google.com/maps?q=12.716211111111111,101.65710555555556" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_d9cc1d65dcec75254926c532bcf02249.setContent(html_d69a21ae259b485d922142ec0bd62b1d);
+            
+        
+
+        marker_d90b94d8fe5c2c3ea2c7f744b7333324.bindPopup(popup_d9cc1d65dcec75254926c532bcf02249)
+        ;
+
+        
+    
+    
+                marker_d90b94d8fe5c2c3ea2c7f744b7333324.setIcon(icon_d027058c5ce2dfe3d6a7c1f6796cb50e);
+            
+    
+            var marker_6c3e27af700c99e30d81d35dc10afb59 = L.marker(
+                [12.716214, 101.657111],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_fbc62bbc07583d82c568f3563663052a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf23723077b67aec4ca14a0d849606a5 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_eadc6f0bb16bd83c754e795803099f57 = $(`<div id="html_eadc6f0bb16bd83c754e795803099f57" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/051.jpg" alt="051.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">051.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4839.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716214<br>                 <b>Lon:</b> 101.657111             </div>             <a href="https://www.google.com/maps?q=12.716213888888888,101.65711111111112" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_bf23723077b67aec4ca14a0d849606a5.setContent(html_eadc6f0bb16bd83c754e795803099f57);
+            
+        
+
+        marker_6c3e27af700c99e30d81d35dc10afb59.bindPopup(popup_bf23723077b67aec4ca14a0d849606a5)
+        ;
+
+        
+    
+    
+                marker_6c3e27af700c99e30d81d35dc10afb59.setIcon(icon_fbc62bbc07583d82c568f3563663052a);
+            
+    
+            var marker_2d8e6986c19f24da3d00ee1322a0af71 = L.marker(
+                [12.716331, 101.657714],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_4b335086fef9fcaed1e499aa94e8c3fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ece116b9cd2f967e6ae8c816dfbd255 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_c08fd9b7d0edbd95b885006d547d9d49 = $(`<div id="html_c08fd9b7d0edbd95b885006d547d9d49" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/053.jpg" alt="053.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">053.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4842.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716331<br>                 <b>Lon:</b> 101.657714             </div>             <a href="https://www.google.com/maps?q=12.716330555555555,101.65771388888889" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_5ece116b9cd2f967e6ae8c816dfbd255.setContent(html_c08fd9b7d0edbd95b885006d547d9d49);
+            
+        
+
+        marker_2d8e6986c19f24da3d00ee1322a0af71.bindPopup(popup_5ece116b9cd2f967e6ae8c816dfbd255)
+        ;
+
+        
+    
+    
+                marker_2d8e6986c19f24da3d00ee1322a0af71.setIcon(icon_4b335086fef9fcaed1e499aa94e8c3fa);
+            
+    
+            var marker_cd038d7a5040c24850f38a0259f91e90 = L.marker(
+                [12.716517, 101.657783],
+                {
+}
+            ).addTo(map_5a0e4ab3097060d1a7d05082a74f56b8);
+        
+    
+            var icon_3587dd7ed36ef1e9146a48e4d0842bd7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c6ba0954928bc06924014e8fb1dae3d = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_4b492dcffa976ffd912007d9bd7ee3ed = $(`<div id="html_4b492dcffa976ffd912007d9bd7ee3ed" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; min-width: 220px; box-sizing: border-box;">             <img src="With_GPS/054.jpg" alt="054.jpg" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">             <h4 style="margin: 0 0 4px 0; font-size: 16px; color: #333;">054.jpg</h4>             <p style="margin: 0 0 10px 0; font-size: 11px; color: #777;">ไฟล์เดิม: IMG_4843.HEIC</p>             <div style="background-color: #f8f9fa; padding: 6px; border-radius: 4px; font-size: 12px; color: #555; margin-bottom: 12px;">                 <b>Lat:</b> 12.716517<br>                 <b>Lon:</b> 101.657783             </div>             <a href="https://www.google.com/maps?q=12.716516666666665,101.65778333333334" target="_blank"                 style="display: block; text-align: center; background-color: #007bff; color: white; padding: 10px 0; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; touch-action: manipulation;">                📍 นำทาง (Google Maps)             </a>         </div>         </div>`)[0];
+                popup_7c6ba0954928bc06924014e8fb1dae3d.setContent(html_4b492dcffa976ffd912007d9bd7ee3ed);
+            
+        
+
+        marker_cd038d7a5040c24850f38a0259f91e90.bindPopup(popup_7c6ba0954928bc06924014e8fb1dae3d)
+        ;
+
+        
+    
+    
+                marker_cd038d7a5040c24850f38a0259f91e90.setIcon(icon_3587dd7ed36ef1e9146a48e4d0842bd7);
+            
+</script>
+</html>
